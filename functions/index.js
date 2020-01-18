@@ -12,69 +12,7 @@ app.set("view engine", "ejs");
 app.get("/", (req, res) => {
 	res.render("index");
 });
-app.get("/contact", (req, res) => {
-	res.render("contact");
-});
-app.get("/galleria", (req, res) => {
-	res.render("galleria");
-});
-app.get("/showcase", (req, res) => {
-	res.render("showcase");
-});
-app.get("/TC", (req, res) => {
-	res.render("tc");
-});
-app.get("/culture", (req, res) => {
-	res.render("culture");
-});
-app.get("/whatYouPay", (req, res) => {
-	res.render("whatYouPay");
-});
-app.get("/whereWeWork", (req, res) => {
-	res.render("whereWeWork");
-});
-app.get("/approverDashboard", (req, res) => {
-	res.render("approver/dashboard");
-});
-app.get("/approverCapitanaDetails", (req, res) => {
-	res.render("approver/capitana/details");
-});
-app.get("/approverCapitanaList2to7", (req, res) => {
-	res.render("approver/capitana/list_2to7");
-});
-app.get("/approverCapitanaList7to15", (req, res) => {
-	res.render("approver/capitana/list_7to15");
-});
-app.get("/approverCapitanaList24", (req, res) => {
-	res.render("approver/capitana/list_24");
-});
-app.get("/approverCapitanaListM15", (req, res) => {
-	res.render("approver/capitana/list_m15");
-});
-app.get("/approverCapitanaDetails", (req, res) => {
-	res.render("approver/capitana/details");
-});
-app.get("/paymentDashboard", (req, res) => {
-	res.render("payment/dashboard");
-});
-app.get("/paymentCapitanaList2to7", (req, res) => {
-	res.render("payment/capitana/list_2to7");
-});
-app.get("/paymentCapitanaList7to15", (req, res) => {
-	res.render("payment/capitana/list_7to15");
-});
-app.get("/paymentCapitanaList24", (req, res) => {
-	res.render("payment/capitana/list_24");
-});
-app.get("/paymentCapitanaListM15", (req, res) => {
-	res.render("payment/capitana/list_m15");
-});
-app.get("/paymentUserDetails", (req, res) => {
-	res.render("payment/user/details");
-});
-app.get("/paymentUserFullDetails", (req, res) => {
-	res.render("payment/user/fulldetails");
-});
+
 
 app.get("/login", (req, res) => {
 	res.render("login");
@@ -138,86 +76,7 @@ app.post("/onUpdateProfile", (req, res) => {
 		});
 });
 
-//routes for super
-app.get("/SuperAddApprover", (req, res) => {
-	res.render("superRyder/super_add_approver");
-});
-app.get("/SuperInsurance", (req, res) => {
-	res.render("superRyder/super_insurance");
-});
-app.get("/SuperPayment", (req, res) => {
-	res.render("superRyder/super_add_paymentad");
-});
-app.get("/SuperManage", (req, res) => {
-	res.render("superRyder/super_approver_manage");
-});
-app.get("/SuperCapitanaPayment", (req, res) => {
-	res.render("superRyder/super_capitana_payment");
-});
-app.get("/SuperCityAdd", (req, res) => {
-	res.render("superRyder/super_city_add");
-});
-app.get("/SuperCityMaster", (req, res) => {
-	res.render("superRyder/super_city_master");
-});
-app.get("/SuperCoupon", (req, res) => {
-	res.render("superRyder/super_coupon_en-dis");
-});
-app.get("/SuperDashBoard", (req, res) => {
-	res.render("superRyder/super_dashboard");
-});
-app.get("/SuperCapitanaPayment", (req, res) => {
-	res.render("superRyder/super_capitana_payment");
-});
 
-app.get("/SuperModifyApprover", (req, res) => {
-	res.render("superRyder/super_modify_approver");
-});
-app.get("/SuperModifyPayment", (req, res) => {
-	res.render("superRyder/super_modify_paymentad");
-});
-app.get("/SuperNewCoupon", (req, res) => {
-	res.render("superRyder/super_newcoupon");
-});
-app.get("/SuperNewNotification", (req, res) => {
-	res.render("superRyder/super_newnotification");
-});
-app.get("/SuperNotifications", (req, res) => {
-	res.render("superRyder/super_notification");
-});
-app.get("/SuperPaymentManage", (req, res) => {
-	res.render("superRyder/super_payment_manage");
-});
-app.get("/SuperPricing", (req, res) => {
-	res.render("superRyder/super_pricing");
-});
-app.get("/SuperRidingSettings", (req, res) => {
-	res.render("superRyder/super_ryder_settings");
-});
-app.get("/SuperRyderStatistics", (req, res) => {
-	res.render("superRyder/super_rydez_statistics");
-});
-app.get("/SuperWalletTrack", (req, res) => {
-	res.render("superRyder/super_wallet_track");
-});
-app.get("/SuperDailyStatistics", (req, res) => {
-	res.render("superRyder/super_daily_statistics");
-});
-app.get("/privacyPolicy", (req, res) => {
-	res.render("privacyPolicy");
-});
-app.get("/EULA", (req, res) => {
-	res.render("EULA");
-});
-app.get("/Disclaimer", (req, res) => {
-	res.render("Disclaimer");
-});
-app.get("/corporateAndWorkCulture", (req, res) => {
-	res.render("corporateAndWorkCulture");
-});
-app.get("/otpadmin", (req, res) => {
-	res.render("otpadmin");
-});
 app.use((req, res, next) => {
 	res.status(404).render("404");
 });

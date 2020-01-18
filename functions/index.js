@@ -31,7 +31,7 @@ app.post("/onLogin", (req, res) => {
 						userRecord.toJSON()
 					);
 					if (userRecord.phoneNumber && userRecord.emailVerified) {
-						return res.send({ path: "/dashboard" });
+						return res.send({ path: "/index" });
 					} else if (!userRecord.emailVerified) {
 						return res.send({ path: "/emailVerification" });
 					} else {
